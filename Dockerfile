@@ -1,4 +1,4 @@
-FROM daocloud.io/ubuntu:16.04
+FROM daocloud.io/python:2-onbuild
 
 MAINTAINER Robin<robin.chen@b-uxin.com>
 
@@ -17,7 +17,13 @@ RUN virtualenv -p /usr/bin/python2.7 py27env
 RUN ["/bin/bash","-c","source py27env/bin/activate"]
 
 
+RUN  mkdir -p /erp
 
+WORKDIR /erp
+
+COPY /DiangoERP /erp
+COPY base.txt /erp
+COPY requirements.txt /erp
 
 #安装Python程序运行的依赖库
 RUN cd /app && pip install -r base.txt
