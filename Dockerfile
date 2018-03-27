@@ -17,7 +17,6 @@ RUN virtualenv -p /usr/bin/python2.7 env
 
 RUN ["/bin/bash","-c","source env/bin/activate"]
 
-
 RUN  mkdir -p /erp
 
 WORKDIR /erp
