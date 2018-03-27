@@ -35,4 +35,4 @@ RUN cd /erp && pip install -r requirements.txt
 EXPOSE 80
 
 
-ENTRYPOINT ["python", "/erp/manage.py run 0.0.0.0:80"]
+ENTRYPOINT ["python", "/erp/manage.py"]
