@@ -4,6 +4,7 @@ MAINTAINER Robin<robin.chen@b-uxin.com>
 
 ENV LANG C.UTF-8
 
+
 RUN apt-get update
 RUN apt-get install -y python && \
      apt-get install -y python-pip
