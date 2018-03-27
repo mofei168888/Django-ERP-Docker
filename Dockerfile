@@ -9,6 +9,8 @@ RUN apt-get update
 RUN apt-get install -y python && \
      apt-get install -y python-pip
 
+RUN pip install --upgrade pip
+
 #创建并管理Python运行的环境
 RUN pip install virtualenv
 
