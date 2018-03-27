@@ -28,8 +28,8 @@ COPY base.txt /erp
 COPY requirements.txt /erp
 
 #安装Python程序运行的依赖库
-RUN cd /app && pip install -r base.txt
-RUN cd /app && pip install -r requirements.txt
+RUN cd /erp && pip install -r base.txt
+RUN cd /erp && pip install -r requirements.txt
 
 
 EXPOSE 80
