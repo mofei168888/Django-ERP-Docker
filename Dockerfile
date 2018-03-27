@@ -12,10 +12,10 @@ RUN apt-get install -y python && \
 #创建并管理Python运行的环境
 RUN pip install virtualenv
 
-RUN virtualenv -p /usr/bin/python2.7 py27env
+RUN virtualenv -p /usr/bin/python2.7 env
 #使用bash命令集
 
-RUN ["/bin/bash","-c","source py27env/bin/activate"]
+RUN ["/bin/bash","-c","source env/bin/activate"]
 
 
 RUN  mkdir -p /erp
