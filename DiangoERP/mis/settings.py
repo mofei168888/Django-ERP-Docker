@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'mis.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '127.0.0.1',
+        'HOST': '127.0.0.1:3306',
         'NAME': 'mis',
         'USER': 'root',
         'PASSWORD': 'robin',
