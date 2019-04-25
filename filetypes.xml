@@ -4,8 +4,10 @@
     <extensionMap>
       <mapping pattern="Dockerfile-1" type="PLAIN_TEXT" />
       <mapping pattern="Dockerfile-bak-20171030" type="PLAIN_TEXT" />
+      <mapping pattern="dd" type="PLAIN_TEXT" />
       <mapping pattern="Dockerfile-bak" type="PLAIN_TEXT" />
       <mapping ext="md" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
